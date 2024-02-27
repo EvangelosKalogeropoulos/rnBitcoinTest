@@ -2,6 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import LocalizedCurrency from '../formatters/localizedCurrency';
 
+/**
+ * Flat list item styles.
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -20,6 +23,13 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * Renders the flat list item.
+ *
+ * @param {String} name - The current name of item.
+ * @param {Number} value - The current value of the item
+ * @returns {React.ReactElement}
+ */
 const FlatListItem = ({ name, value }) => (
   <View style={styles.container}>
     <Text style={styles.name}>{name}</Text>

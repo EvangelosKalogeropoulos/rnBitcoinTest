@@ -1,3 +1,8 @@
+/**
+ * Async fanction that performs the api call for current prices for bitcoin.
+ *
+ * @returns {Promise}
+ */
 export default async () => {
   try {
     const response = await fetch(

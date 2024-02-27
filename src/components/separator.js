@@ -1,6 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
+/**
+ * Separator styles
+ */
 const styles = StyleSheet.create({
   separatorContainer: {
     flexDirection: 'row',
@@ -9,6 +12,11 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * Renders the separator between flat list items.
+ *
+ * @returns {React.ReactElement}
+ */
 const Separator = () => <View style={styles.separatorContainer} />;
 
 export default Separator;

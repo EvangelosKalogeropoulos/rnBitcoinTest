@@ -10,7 +10,7 @@ function* generatorFunction(callback, args) {
  * generator object until its completion, returning the final execution result.
  *
  * @param {function(...*): Generator} generatorFunction - The generator function to run.
- * @param {...*} args=[] - The arguments to pass to the generator.
+ * @param {...*} args - The arguments to pass to the generator.
  * @returns {Promise<null>}
  * @throws {Error}
  */
@@ -39,7 +39,7 @@ const runGenerator = async (callback, args) => {
  * ]
  *
  * @param {function(...*): Generator} generatorFunction - The generator function.
- * @param {...*} args=[] - The arguments to pass to the generator on invocation.
+ * @param {...*} args - The arguments to pass to the generator on invocation.
  * @returns {Array.<*>}
  */
 const useGenerator = (callback, ...args) => {

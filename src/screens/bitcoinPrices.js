@@ -8,13 +8,22 @@ import Header from '../components/header';
 import ScreenLoader from '../components/screenLoader';
 import Separator from '../components/separator';
 import Error from '../components/error';
+import EmptyListView from '../components/emptyListView';
 
+/**
+ * BitconPrices styles.
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
 });
 
+/**
+ * Renders the bitcoin prices with the last updated timestamp.
+ *
+ * @returns {React.ReactElement}
+ */
 const BitcoinPrices = () => {
   const [getCurrencyConversionList, isLoading, response, error] = useGenerator(
     currencyConversionsListHandler,
@@ -57,6 +66,7 @@ const BitcoinPrices = () => {
             )}
             keyExtractor={({ currencyName }) => currencyName}
             ItemSeparatorComponent={Separator}
+            ListEmptyComponent={EmptyListView}
           />
         </Fragment>
       )}

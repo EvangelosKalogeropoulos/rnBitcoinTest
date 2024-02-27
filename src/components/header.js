@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
+/**
+ * Header styles.
+ */
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#0050B5',
@@ -23,6 +26,13 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * Renders the Header of the bitcoin prices screen.
+ *
+ * @param {String} lastUpdate - The last updated value.
+ * @param {Function} onRefreshPress - The refresh action.
+ * @returns {React.ReactElement}
+ */
 const Header = ({ lastUpdate, onRefreshPress }) => {
   return (
     <View style={styles.container}>

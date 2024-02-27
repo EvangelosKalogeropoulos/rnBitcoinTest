@@ -1,6 +1,9 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 import React from 'react';
 
+/**
+ * Error styles.
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -19,6 +22,13 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * Renders the error screen when something goes wrong with the api calls.
+ *
+ * @param {String} errorValue - The current error value.
+ * @param {Function} onRefreshPress - The refresh action.
+ * @returns {React.ReactElement}
+ */
 const Error = ({ errorValue, onRefreshPress }) => {
   return (
     <View style={styles.container}>

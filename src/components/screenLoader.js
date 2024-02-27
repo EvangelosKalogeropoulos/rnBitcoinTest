@@ -1,6 +1,9 @@
 import { StyleSheet, ActivityIndicator, View } from 'react-native';
 import React from 'react';
 
+/**
+ * Screen loader styles.
+ */
 const styles = StyleSheet.create({
   loaderContainer: {
     position: 'absolute',
@@ -15,6 +18,12 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * Renders the screen loader.
+ *
+ * @param {Boolean} isLoading - The loading boolean.
+ * @returns {React.ReactElement}
+ */
 const ScreenLoader = ({ isLoading }) =>
   isLoading ? (
     <View style={styles.loaderContainer}>
