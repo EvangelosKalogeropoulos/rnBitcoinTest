@@ -1,7 +1,6 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { Dashboard } from './src';
+import { BitcoinPrices } from './src';
 
-const App = () => <Dashboard />;
+const App = () => <BitcoinPrices />;
 
 export default App;

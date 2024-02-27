@@ -1,3 +1,3 @@
-import Dashboard from './screens';
+import BitcoinPrices from './screens/bitcoinPrices';
 
-export { Dashboard };
+export { BitcoinPrices };
